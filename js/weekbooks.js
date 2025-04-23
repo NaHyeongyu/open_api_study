@@ -1,7 +1,7 @@
 // 주간 베스트 셀러 슬라이더 (5개씩, 무한루프, 애니메이션)
 $(function () {
   // fetch 주간 베스트 셀러 데이터
-  fetch(`https://dapi.kakao.com/v3/search/book?query=파이썬&size=12}`, {
+  fetch(`https://dapi.kakao.com/v3/search/book?query=파이썬&size=10`, {
     headers: {
       Authorization: "KakaoAK 8da443483254de2b1f9f4190858682cb",
     },
