@@ -1,0 +1,665 @@
+.bookinner {
+  width: 1060px;
+  height: 850px;
+}
+.booksubimg {
+  padding: 50px 0;
+  margin-top: 30px;
+  width: 500px;
+  height: 700px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  background-color: #fbfbfb;
+}
+.booksubimg > img {
+  width: 400px;
+  height: 600px;
+}
+.booksubdetail {
+  width: 520px;
+  height: 850px;
+  float: right;
+  margin-top: 30px;
+}
+.listtag > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-top: 20px;
+}
+.listtag > ul > li {
+  margin: 0;
+  margin-right: 4px;
+}
+.listtag > ul > li > span {
+  font-size: 12px;
+  color: rgb(74, 175, 112);
+  padding: 5px 15px;
+  border: 1px solid rgb(74, 175, 112);
+}
+.submaintitle {
+  margin-top: 20px;
+}
+.submaintitle > h2 {
+  font-size: 28px;
+}
+.subbookinfo {
+  margin-top: 12px;
+}
+.subbookinfo > span {
+  font-size: 13px;
+  color: #80888a;
+}
+.subbookwriter {
+  padding-right: 6px;
+  border-right: 1px solid #80888a;
+}
+.subbookdate {
+  display: block;
+  margin-top: 4px;
+}
+.subbookreview > .stars {
+  display: inline;
+  width: 50px;
+}
+.subbookreview {
+  margin-top: 8px;
+}
+.subbookreview > .stars ul {
+  display: inline-flex;
+  align-items: center;
+  justify-content: start;
+  width: 70px;
+  margin: 0;
+}
+.subbookreview > .stars > ul > li > img {
+  width: 14px;
+  height: 14px;
+  padding-top: 1px;
+}
+.reviewscore {
+  font-size: 14px;
+  font-weight: 800;
+  margin-left: 4px;
+}
+.reviewcount {
+  font-size: 13px;
+  color: #80888a;
+  margin-left: 4px;
+}
+.subbookprice {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  margin-top: 16px;
+  border-bottom: 1px solid rgb(57, 57, 57);
+}
+.subbookprice > span {
+  margin: 0;
+}
+.firstprice {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: #80888a;
+}
+.currentprice {
+  font-size: 32px;
+  color: #ee203b;
+  font-weight: 700;
+}
+.won {
+  font-size: 16px;
+  color: #ee203b;
+  padding-right: 12px;
+  padding-left: 4px;
+}
+.discount {
+  padding-left: 10px;
+  font-size: 14px;
+  color: #ee203b;
+}
+.subbooketc1 {
+  margin-top: 3%;
+}
+.subbooketc1detail {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.subbooketc1detail > div {
+  margin-top: 4px;
+}
+.savings {
+  width: 120px;
+}
+.savingsdetail {
+  width: 400px;
+}
+.benefits {
+  width: 120px;
+}
+.benefitsdetail {
+  width: 400px;
+}
+span {
+  font-size: 13px;
+  color: #80888a;
+  margin-right: 16px;
+}
+span > button {
+  border-radius: 50%;
+  background-color: #e9e9e9;
+  width: 16px;
+  height: 16px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  display: inline;
+}
+span > button > img {
+  width: 13px;
+  height: 11px;
+}
+h5 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.red {
+  font-size: 14px;
+  color: #ee203b;
+  margin: 0;
+  font-weight: 600;
+}
+.subregister {
+  margin-top: 30px;
+  border: 0.3px solid #d5ecdc;
+  background-color: #f5fbf7;
+  width: 520px;
+  height: 54px;
+  padding: 16px;
+}
+.subregister > span {
+  font-size: 14px;
+  color: #3d3c3f;
+  margin: 0;
+  font-weight: 600;
+}
+.subbooketc2 {
+  margin-top: 30px;
+}
+.savings > span > button {
+  margin-left: 8px;
+}
+.benefits > span > button {
+  margin-left: 8px;
+}
+.etc2info {
+  width: 400px;
+
+  margin-top: 10px;
+  margin-left: 120px;
+}
+.etc2delivery {
+  font-size: 12px;
+  color: rgb(74, 175, 112);
+  padding: 4px 8px;
+  border: 0.4px solid rgb(74, 175, 112);
+  margin-right: 8px;
+}
+.etc2now {
+  font-size: 12px;
+  color: #ee203b;
+  padding: 4px 8px;
+  border: 0.4px solid #ee203b;
+  margin-right: 8px;
+}
+.green {
+  color: rgb(74, 175, 112);
+}
+.subbooktotalprice {
+  width: 100%;
+  background-color: #f8f8f8;
+  border-top: 0.7px solid black;
+  margin-top: 30px;
+  padding: 20px 0;
+}
+.selceter {
+  display: inline-flex;
+  margin-left: 20px;
+}
+.totalcost {
+  display: inline-flex;
+  align-items: center;
+  float: right;
+  margin-right: 20px;
+}
+.totalprice {
+  font-size: 20px;
+  font-weight: 800;
+  color: #ee203b;
+}
+.selceter > button {
+  width: 28px;
+  height: 28px;
+  background-color: white;
+  border: 0.3px solid grey;
+}
+.selceter > input {
+  width: 40px;
+  text-align: center;
+  border: none;
+  border-bottom: 0.3px solid grey;
+  border-top: 0.3px solid grey;
+}
+
+.subbookbutton {
+  margin-top: 30px;
+  display: flex;
+}
+.subbookbutton > a > button {
+  padding: 14px 50px;
+  font-size: 18px;
+}
+.cart {
+  background-color: white;
+  color: #80888a;
+  border: 0.3px solid #80888a;
+  border-radius: 4px;
+}
+.paynow {
+  background-color: rgb(74, 175, 112);
+  color: white;
+  border: none;
+  font-weight: 700;
+  border-radius: 4px;
+}
+.now {
+  background-color: white;
+  color: #be1c27;
+  border: 1px solid #be1c27;
+  border-radius: 4px;
+}
+.detailnav {
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+  background-color: #ededed;
+}
+.detailnav > ul {
+  width: 1060px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  background-color: #efefef;
+  margin: 0 auto;
+  padding: 0;
+}
+.detailnav > ul > li {
+  margin: 0;
+}
+.detailnav > ul > li > button {
+  padding: 14px 80px;
+  font-size: 16px;
+  color: #80888a;
+  border: none;
+}
+#detailnavchecked {
+  color: white;
+  background-color: rgb(74, 175, 112);
+  font-weight: 700;
+}
+.detailnav > ul > li > button.detailnavchecked {
+  color: white;
+  background-color: rgb(74, 175, 112);
+  font-weight: 700;
+}
+.detailpay {
+  width: 280px;
+  height: 450px;
+  border: 0.5px solid rgb(175, 175, 175);
+  padding: 36px 20px;
+  margin: 0 0 0 60px;
+  position: sticky;
+  top: 80px;
+  z-index: 999;
+  margin-top: 40px;
+}
+.detailpay1 {
+  height: 112px;
+  border-bottom: 1px solid rgb(93, 93, 93);
+}
+.detailpay1 > img {
+  width: 60px;
+  height: 90px;
+  box-shadow: 1px 1px 1px rgb(219, 219, 219);
+}
+.detailpay1 > span {
+  font-size: 16px;
+  color: black;
+  font-weight: 500;
+  width: 158px;
+  height: 90px;
+  float: right;
+  margin-left: 20px;
+  margin-right: 0;
+}
+.selceter1 {
+  display: inline-flex;
+}
+.selceter1 > button {
+  width: 28px;
+  height: 28px;
+  background-color: white;
+  border: 0.3px solid grey;
+}
+.selceter1 > input {
+  width: 40px;
+  text-align: center;
+  border: none;
+  border-bottom: 0.3px solid grey;
+  border-top: 0.3px solid grey;
+}
+.totalprice1 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ee203b;
+}
+.totalcost1 {
+  display: inline-flex;
+  align-items: center;
+  float: right;
+}
+.detailpay2 {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 0.3px solid rgb(179, 179, 179);
+}
+.pricenotice > span {
+  font-size: 12px;
+  color: #acacac;
+}
+.subbookbutton1 {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.subbookbutton1 > a > button {
+  padding: 10px 80px;
+  font-size: 15px;
+  width: 238px;
+  margin-bottom: 8px;
+}
+.cart1 {
+  background-color: white;
+  color: #80888a;
+  border: 0.3px solid #80888a;
+  border-radius: 4px;
+}
+.paynow1 {
+  background-color: rgb(74, 175, 112);
+  color: white;
+  border: none;
+  font-weight: 700;
+  border-radius: 4px;
+}
+.now1 {
+  background-color: white;
+  color: #be1c27;
+  border: 1px solid #be1c27;
+  border-radius: 4px;
+}
+.detail {
+  width: 1060px;
+  display: flex;
+}
+.detailitem {
+  margin: 0;
+  width: 720px;
+}
+.tableproductinfo {
+  margin: 40px 0 0 0;
+  border-collapse: collapse;
+}
+.tableproductinfo > tr {
+  width: 720px;
+}
+.tableproductinfo th,
+td {
+  font-size: 14px;
+  color: #80888a;
+  font-weight: 400;
+}
+.tableproductinfo th {
+  padding: 6px 20px;
+  width: 160px;
+  height: 40px;
+  background-color: #f1f1f1;
+  margin: 0;
+}
+.tableproductinfo td {
+  padding: 6px 20px;
+  margin: 0;
+}
+
+.toggle-content {
+  max-height: 150px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 40px;
+}
+
+.toggle-content.open {
+  max-height: 1000px;
+}
+.toggle-content > span {
+  font-size: 14px;
+  color: rgb(116, 116, 116);
+}
+.toggle-btn {
+  float: right;
+  margin-right: 40px;
+  margin-top: 30px;
+  width: 100px;
+  padding: 8px;
+  border-radius: 20px;
+  border: 0.5px solid rgb(153, 153, 153);
+  background-color: white;
+  color: #80888a;
+}
+.detailiteminfo {
+  margin-top: 100px;
+  border-bottom: #dadada 0.3px solid;
+  padding-bottom: 80px;
+}
+.detailintroduce {
+  margin-top: 100px;
+  border-bottom: #dadada 0.3px solid;
+  padding-bottom: 100px;
+}
+.detailicompanyintroduce {
+  margin-top: 100px;
+  border-bottom: #dadada 0.3px solid;
+  padding-bottom: 100px;
+}
+.detailwriterintroduce {
+  margin-top: 100px;
+  border-bottom: #dadada 0.3px solid;
+  padding-bottom: 100px;
+}
+.writerintoduce {
+  margin-top: 40px;
+}
+.writerintoduce > span strong {
+  font-size: 14px;
+  color: black;
+}
+h3 {
+  font-size: 22px;
+}
+.detailreview {
+  margin-top: 100px;
+  border-bottom: #dadada 0.3px solid;
+  padding-bottom: 100px;
+}
+.detailreviewtop > button {
+  background-color: rgb(74, 175, 112);
+  color: white;
+  border: none;
+  font-weight: 700;
+  border-radius: 2px;
+  width: 110px;
+  margin-left: 140px;
+  height: 40px;
+}
+.detailreviewtop > span {
+  margin-top: 50px;
+}
+.detailreviewbottom {
+  width: 720;
+  height: 115px;
+  border: 0.3px solid rgb(193, 193, 193);
+  margin-top: 16px;
+  padding: 36px 280px;
+}
+.detailreviewbottom > span {
+  margin: 0;
+}
+.detailrecommand {
+  margin-top: 100px;
+  border-bottom: #dadada 0.3px solid;
+  padding-bottom: 100px;
+}
+.detailrecommand1 {
+  margin-top: 100px;
+  border-bottom: #dadada 0.3px solid;
+  padding-bottom: 100px;
+}
+.prevbutton:hover,
+.nextbutton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Slider navigation buttons - positioned on left/right of slider-view and vertically centered */
+.prevbutton1,
+.nextbutton1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #3a3a3a;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.prevbutton1 {
+  left: -27px;
+}
+
+.nextbutton1 {
+  right: -27px;
+}
+
+.detailtrendbook {
+  position: relative;
+}
+.detailtogetherbook {
+  position: relative;
+}
+.detailbookwrap {
+  width: 644px;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.detailbookbox a > img {
+  width: 140px;
+  height: 210px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px rgb(226, 226, 226);
+}
+.detailbookbox > a > h3 {
+  font-size: 14px;
+  color: #3d3c3f;
+  margin-top: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 400;
+}
+.detailbookbox > a > h4 {
+  font-size: 12px;
+  color: #80888a;
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 400;
+}
+.slider-view {
+  width: 644px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.detailbookbox {
+  width: 140px;
+  flex-shrink: 0;
+  margin: 0 11px;
+  box-sizing: border-box;
+}
+.border {
+  padding: 40px;
+  width: 720px;
+  height: 365px;
+  border: 0.3px solid rgb(193, 193, 193);
+  margin-top: 40px;
+  border-radius: 16px;
+}
+.service {
+  margin-top: 100px;
+  border-bottom: #dadada 0.3px solid;
+  padding-bottom: 100px;
+}
+.service > table {
+  width: 720px;
+  border-collapse: collapse;
+  margin-top: 60px;
+}
+.service > table th {
+  font-size: 13px;
+  font-weight: 600;
+  background-color: #f7f7f7;
+  color: #3a3a3a;
+  padding: 10px;
+  height: auto;
+  width: 165px;
+  line-height: 1.6;
+  border: 1px solid #ddd;
+}
+.service > table td {
+  color: #80888a;
+  padding: 15px;
+  height: auto;
+  width: 555px;
+  line-height: 1.7;
+  border: 1px solid #eee;
+}

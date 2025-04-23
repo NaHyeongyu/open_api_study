@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/sub.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/sub.js"></script>
+    <script src="js/sub_trend.js"></script>
+    <script src="js/sub_together.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- 상단배너 -->
+      <div class="headerBanner">
+        <div class="headerBanner1">
+          <a href="#"><img src="img/header/headerbanner1.jpg" alt="" /></a>
+        </div>
+        <div class="headerBanner2">
+          <a href="#"><img src="img/header/headerbanner2.png" alt="" /></a>
+        </div>
+      </div>
+      <!-- 상단 메뉴 -->
+      <div class="headerFirst">
+        <div class="headerFirstBox">
+          <div class="headerFirstBoxLeft">
+            <ul>
+              <li><a href="#">매장안내</a></li>
+              <li><a href="#">헤택안내</a></li>
+              <li><a href="#">나우드림</a></li>
+            </ul>
+          </div>
+          <div class="headerFirstBoxRight">
+            <ul>
+              <li><a href="#">로그인</a></li>
+              <li><a href="#">장바구니</a></li>
+              <li><a href="#">주문/배송</a></li>
+              <li><a href="#">고객센터</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 상단 로고,검색,광고 -->
+      <div class="headerSecond">
+        <!-- 로고 -->
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/header/yp_logo.png" alt="logo" />
+          </a>
+        </div>
+
+        <!-- 검색창 -->
+        <div class="finder">
+          <div class="search">
+            <input
+              type="search"
+              id="finder"
+              placeholder="APP에서는 매일 적립금 지급!"
+            />
+            <button class="search-icon">
+              <img src="img/header/searchicon.png" alt="search" />
+            </button>
+          </div>
+          <div class="recommandWords">
+            <ul>
+              <li><a href="#">김영하 신간</a></li>
+              <li><a href="#">2025 젊은 작가상</a></li>
+              <li><a href="#">줬으면 그만이지</a></li>
+              <li><a href="#">듀얼 브레인</a></li>
+              <li><a href="#">유현준 공간 인간</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 광고 -->
+        <div class="advertise">
+          <img src="img/header/ad_book.jpg" alt="광고 이미지" />
+          <div class="adDetail">
+            <span class="adMark">AD</span>
+            <span class="adTitle">내면소통 명상수업</span>
+            <span class="adDetails">마음근력 향상을 위한 명상 가이드</span>
+            <img src="img/header/nexticon.png" alt="next" />
+            <img src="img/header/backicon.png" alt="back" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="navAll">
+      <div id="nav">
+        <div class="category">
+          <img src="img/main/categoryicon.png" alt="" />
+          <span>전체 카테고리</span>
+        </div>
+        <div class="navLeft">
+          <ul>
+            <li><a href="#">베스트</a></li>
+            <li><a href="#">신상품</a></li>
+            <li><a href="#">추천</a></li>
+            <li><a href="#">기프티콘</a></li>
+          </ul>
+        </div>
+        <div class="navRight">
+          <ul>
+            <li><a href="#">혜택</a></li>
+            <li><a href="#">사은품</a></li>
+            <li><a href="#">문화행사</a></li>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">출석체크</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="subnav"></div>
+    <div class="bookinner">
+      <div class="booksubimg">
+        <img src="img/main/book1.jpg" alt="" />
+      </div>
+      <div class="booksubdetail">
+        <div class="listtag">
+          <ul>
+            <li><span>오늘의책</span></li>
+            <li><span>베스트</span></li>
+            <li><span>소득공제</span></li>
+          </ul>
+        </div>
+        <div class="submaintitle">
+          <h2>줬으면 그만이지-아름다운 부자 김장하 취재기</h2>
+        </div>
+        <div class="subbookinfo">
+          <span class="subbookwriter">김주완</span>
+          <span>퍼플파워</span>
+          <span class="subbookdate">2023 01월 01일</span>
+          <div class="subbookreview">
+            <div class="stars">
+              <ul>
+                <li><img src="img/sub/star.png" alt="" /></li>
+                <li><img src="img/sub/star.png" alt="" /></li>
+                <li><img src="img/sub/star.png" alt="" /></li>
+                <li><img src="img/sub/star.png" alt="" /></li>
+                <li><img src="img/sub/star.png" alt="" /></li>
+              </ul>
+            </div>
+            <span class="reviewscore">0</span>
+            <span class="reviewcount">리뷰 0개</span>
+          </div>
+        </div>
+        <div class="subbookprice">
+          <span class="currentprice">18,000</span>
+          <span class="won">원</span>
+          <span class="firstprice">20,000</span>
+          <span class="discount">(10% 할인) </span>
+        </div>
+        <div class="subbooketc1">
+          <h5>혜택안내</h5>
+          <div class="subbooketc1detail">
+            <div class="savings"><span>적립금</span></div>
+            <div class="savingsdetail"><span>1000원 (5% 적립)</span></div>
+            <div class="benefits"><span>결제혜택</span></div>
+            <div class="benefitsdetail">
+              <span
+                >무이자 할부
+                <button><img src="img/sub/arrow.png" alt="" /></button
+              ></span>
+              <span
+                >결제사 혜택
+                <button><img src="img/sub/arrow.png" alt="" /></button
+              ></span>
+              <span
+                >쿠폰 <button><img src="img/sub/arrow.png" alt="" /></button
+              ></span>
+            </div>
+          </div>
+          <div class="subregister">
+            <span
+              >회원 가입 <span class="red">즉시 지급되는 적립금 </span>과 등급별
+              다양한 <span class="red">회원 혜택 </span>보기 -></span
+            >
+          </div>
+        </div>
+        <div class="subbooketc2">
+          <h5>배송정보</h5>
+          <div class="subbooketc1detail">
+            <div class="savings">
+              <span
+                >배송비<button><img src="img/sub/arrow.png" alt="" /></button
+              ></span>
+            </div>
+            <div class="savingsdetail">
+              <span>무료 (해외배송의 경우 지역에 따라 상이)</span>
+            </div>
+            <div class="benefits">
+              <span
+                >배송안내<button><img src="img/sub/arrow.png" alt="" /></button>
+              </span>
+            </div>
+            <div class="benefitsdetail">
+              <span> 서울특별시 강남구 강남대로 542(논현동, 영풍빌딩) </span>
+            </div>
+          </div>
+          <div class="etc2info">
+            <span class="etc2delivery">택배배송</span
+            ><span
+              >지금 택배 주문하면
+              <span class="green">이틀 뒤 출고 가능</span></span
+            >
+          </div>
+          <div class="etc2info">
+            <span class="etc2now">나우드림</span
+            ><span>택배보다 빠른 매장 픽업 서비스</span>
+          </div>
+        </div>
+        <div class="subbooktotalprice">
+          <div class="selceter">
+            <button>-</button>
+            <input
+              type="text"
+              name="selecternumber"
+              id="selecternumber"
+              value="1"
+            />
+            <button>+</button>
+          </div>
+          <div class="totalcost">
+            <span class="totalprice"> 18,000<span class="red">원</span> </span>
+          </div>
+        </div>
+        <div class="pricenotice">
+          <span>실결제 금액은 적립금, 쿠폰 등에 따라 달라질 수 있습니다.</span>
+        </div>
+        <div class="subbookbutton">
+          <a href="#"><button class="cart">장바구니</button></a>
+          <a href="#"><button class="paynow">바로구매</button></a>
+          <a href="#"><button class="now">나우드림</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="detailnav">
+      <ul>
+        <li>
+          <button id="detailnavchecked" class="detailnavchecked">
+            도서정보
+          </button>
+        </li>
+        <li><button>리뷰</button></li>
+        <li><button>추천</button></li>
+        <li><button>교환/반품/환불</button></li>
+      </ul>
+    </div>
+    <div class="detail">
+      <div class="detailitem">
+        <div class="detailiteminfo">
+          <h3>상품 규격 정보</h3>
+          <table class="tableproductinfo">
+            <tr>
+              <th>ISBN</th>
+              <td>ISBN-13 : 9791186351543</td>
+            </tr>
+            <tr>
+              <th>쪽수</th>
+              <td>359쪽</td>
+            </tr>
+            <tr>
+              <th>크기</th>
+              <td>규격 외(225mm X 152mm, 신국판)</td>
+            </tr>
+            <tr>
+              <th>제품구성</th>
+              <td>반양장</td>
+            </tr>
+          </table>
+        </div>
+        <div class="detailintroduce">
+          <h3>책 소개</h3>
+          <div class="toggle-section">
+            <div class="toggle-content open">
+              <span>
+                <strong>
+                  “이만큼 베푼 사람은 많지만<br />
+                  이만큼 드러내지 않은 이는 없다”<br /><br />
+                  20대 중반부터 50년 넘게 이어온<br />
+                  기대 없이 베풀고 대가 바라지 않는 삶<br />
+                  선한 영향력 절로 넓혀가는 김장하 바이러스<br />
+                  도대체 무엇이 이런 삶을 가능하게 했을까<br /><br
+                /></strong>
+
+                취재 과정에서 가장 많이 받은 질문은 “어떻게 김장하 선생의 허락을
+                받았느냐”는 말이었다.<br />
+                하지만 선생은 허락한 적이 없다.<br />
+                선생은 그동안 형평운동기념사업회를 비롯한 여러 공적인 단체에
+                몸을 담고 공적인 활동을 해왔다.<br />
+                따라서 선생은 공인(公人)에 준(準)하는 인물을 취재하겠다는데,
+                그것까지 못하게 막을 권리는 없다고 생각한 것 같다.<br /><br />
+
+                인터뷰도 한 적이 없다.<br />
+                찾아오는 사람을 냉정하게 내치지 못하는 선생의 약점(?)을 공략했을
+                뿐이다.<br />
+                그리고 많은 분이 자연스럽게 선생과 함께할 수 있는 자리를
+                만들어주셨다.<br />
+                그분들께도 깊이 감사드린다.<br /><br />
+
+                2021년 11월 엠비씨경남 김현지 피디로부터 함께 취재하자는 제안을
+                받았고,<br />
+                덕분에 내가 아예 접근하지 못했거나 놓쳤을 것들을 얻어 건진 것도
+                많았다.<br />
+                특히 김현지 피디와 강호진 촬영감독, 차선영 작가의 기획력과
+                섭외력, 취재현장의 순발력에 덕본 게 많다.<br /><br />
+
+                ‘100명의 김장하, 1000명의 김장하’를 취재 과정에서 많이 만날 수
+                있었던 것도 기쁨이었다.<br />
+                하남칠 교장은 ‘장학금 돌려주기’ 차원에서 모교 학생들에게 오랜
+                세월 매년 장학금을 주고 있었고,<br />
+                본문에 등장하진 않지만 명신고 출신 건축가 박범주(1970~) 씨도
+                문화예술계에 든든한 후원자로 김장하를 닮아가고 있다는 이야기를
+                들었다.<br />
+                이 책에 등장한 사람들은 말할 것도 없고 등장하지 않은 사람들
+                중에도 이미 ‘김장하 바이러스’에 감염된 사람이 많았다.<br />
+                이런 선순환이 돌고 돌아 김장하 선생이 꿈꾸는 모두가 잘 사는
+                세상이 반드시 오리라 믿는다.<br /><br />
+
+                취재 과정에서 김현지 피디는 만나는 사람마다 “김장하 선생을 한
+                마디로 표현하자면?”이라는 질문을 던졌다.<br />
+                ‘생불’ ‘보살’ ‘의인’ ‘진정한 어른’ ‘이 시대의 예수’ ‘든든한
+                뒷배’ ‘시민운동의 비빌 언덕’<br />
+                ‘호의(好義)와 경의(敬義)의 표본’ ‘남명 조식 선생 같은 분’ ‘모든
+                것을 품어주는 호수’ 등 다양한 표현이 나왔다.<br /><br />
+
+                그런데 내가 가장 공감했던 표현은 ‘이 시대의 강상호
+                선생’이었다.<br />
+                극단현장 고능석 대표가 한 말이었다.<br />
+                대중적으로 강상호라는 이름을 아는 사람이 많지 않아 방송용으로는
+                별로였겠지만,<br />
+                호의호식할 수 있는 부자임에도 자신의 재산을 털어 세상의 가장
+                천대받는 사람들 편에서<br />
+                평등과 정의를 실현하기 위해 앞장섰다는 점에서 가장 닮은 두
+                사람이었다.<br /><br />
+                ----작가의 ‘닫는 말’ 중에서
+              </span>
+            </div>
+            <button class="toggle-btn">접기</button>
+          </div>
+        </div>
+        <div class="detailicompanyintroduce">
+          <h3>출판사 서평</h3>
+          <div class="toggle-section">
+            <div class="toggle-content open">
+              <span>
+                <span>
+                  한동안 소문으로만 떠돌던 나눔과 베풂 이야기<br /><br />
+
+                  가난 속에 일군 부 아낌없이 내놓은 김장하<br />
+                  언론에 자신을 드러내지 않는 김장하<br />
+                  베풀고도 내세우지 않는 자세는 어디에서 연유할까?<br />
+                  그이를 본받으려는 100명, 1000명의 김장하 장학생<br /><br />
+
+                  『줬으면 그만이지』는 아름다운 부자 김장하를 취재한 기록이다.
+                  책을 보면 김장하는 보통 사람들은 따라 하기 어려운 대단한
+                  인물이라는 생각이 절로 든다. 찢어지게 가난한 집안에서 태어나
+                  중학교밖에 졸업하지 못하고 한약사로 성공해 대단한 부를 일군
+                  것을 두고 하는 말이 아니다.<br /><br />
+
+                  선생은 나눔과 베풂을 일상 속에서 실천했다. 20대 젊은 시절부터
+                  가난한 학생들을 위해 남몰래 장학금을 주었다. 지금까지 선생의
+                  장학금을 받은 사람이 1000명을 웃돈다고 한다. 100억 원이 넘는
+                  돈을 들여 세운 사학 명신고등학교는 자리를 잡자마자 바로 국가에
+                  헌납했고 필생의 사업이었던 한약방을 접을 때도 30억 원이 넘는
+                  자산을 국립경상대에 기부했다. 선생의 지원은 교육뿐 아니라
+                  사회·문화·역사·예술·여성·노동·인권 등 정치를 제외한 모든
+                  영역에 걸쳐 있었다.<br /><br />
+
+                  이런 얘기들이 한동안은 소문으로만 떠돌았다. 장학금을 받은
+                  사람은 있는데 준 사람은 없었다. 형평운동·남성문화재단·진주신문
+                  등 쉽게 노출되는 일조차도 언론의 스포트라이트는커녕 자기
+                  이름이 거명되는 것까지 한사코 꺼렸다. 도움을 받은 사람은
+                  줄줄이 널렸는데 정작 베푼 사람은 보이지 않는 이상한 현상은
+                  50년 남짓 이어졌다.<br /><br />
+
+                  『줬으면 그만이지』는 ‘아름다운 부자 김장하 취재기’이기도
+                  하지만 ‘허락받지 못한 취재기’이기도 하다. 김장하 선생은 본인의
+                  정의로운 베풂을 여태 꽁꽁 숨겨왔다. 보통 사람이라면 열 배 백
+                  배 뻥튀기해 알리고도 남았을 텐데 선생은 그랬다. 이런 선생이
+                  본인에 대한 취재를 허락했을 리가 만무했고 실제로도
+                  그러했다.<br /><br />
+
+                  전직 기자인 김주완 작가는 허락받지 않은 취재를 하면서 놀라운
+                  경험을 했다고 밝혔다. 지난 30년 동안 기자로 살았지만 이토록
+                  많은 이들로부터 자발적이고 적극적인 취재 협조를 받은 적은
+                  없었다는 것이다. 선생이 베푼 범위가 넓다 보니 겹치는 인연이
+                  많아서일 수도 있고, 정의를 위해 선의로 베푼 것이다 보니
+                  아름답게 여기는 이들이 많았기 때문일 수도 있다.<br /><br />
+
+                  이렇게 펼쳐지는 취재기는 30년 경력 취재 기자의 남다른 필력이
+                  돋보인다. 본인의 허락이 없었기에 선생의 생애 전체가
+                  일목요연하게 들여다보이지는 않으나 그래도 이런 정도면
+                  어지간하게 했다는 생각이 들게 만든다. 선생의 기부와 나눔과
+                  베풂도 모든 것을 샅샅이 찾아내지는 않았지만 모자라지 않을
+                  만큼은 담아내었다. 게다가 흥미로운 에피소드와 숨은 이야기도
+                  제법 실려 있다.<br /><br />
+
+                  하지만 사람들이 가장 궁금해하고 흥미로워하는 것은 도대체
+                  선생이 왜 그랬을까가 아닐까 싶다. 그렇게 열심히 번 돈을 선생은
+                  왜 그렇게 아낌없이 기부하고 나누고 베풀었을까? 그렇게 세상과
+                  남을 위해 좋은 일을 하면 내세우고 싶었을 텐데 어떻게 해서
+                  선생은 시종일관 조금도 드러내지 않았을까?<br /><br />
+
+                  이 책은 선생의 행적을 제대로 밝혀놓은 것만으로도 제 몫을 하고
+                  있다. 하지만 그에 머물지 않고 나눔과 베풂을 하면서도 본인은
+                  드러내지 않는 평소 소신과 생활 태도까지 쉽게 풀어놓고 있다.
+                  선생의 소탈한 인간적인 면모와 꾸밈없는 유머감각도 책갈피
+                  여기저기에서 읽은 재미를 더한다.<br /><br />
+
+                  이런 선생에게 그이를 본받고 배우려는 이들이 100명, 1000명
+                  생겨나는 것은 당연한 일이었다. 선생은 장학생들에게 나에게서
+                  받은 것이 있다면 그것을 나에게 갚으려 하지 말고 대신 다른
+                  사람에게 베풀라고 했다. 공동체를 아름답게 하는 선순환, 이른바
+                  ‘김장하 바이러스’다.<br />
+                </span>
+              </span>
+            </div>
+            <button class="toggle-btn">접기</button>
+          </div>
+        </div>
+        <div class="detailwriterintroduce">
+          <h3>저자소개</h3>
+          <div class="writerintoduce">
+            <span>
+              <strong>김주완</strong><br /><br />
+
+              1964년생. 경남도민일보 편집국장을 거쳐 전무이사로 있던 중 2022년에
+              정년을 3년 앞당겨 퇴직했다.<br />
+              경영진으로서 깜냥도 안 될뿐더러 좀 더 긴 호흡으로 깊고 넓은 취재를
+              해보고 싶었기 때문이다.<br />
+              기자로 일할 때 역사와 사람에 관심이 많았고 지금도 그렇다.<br />
+              인생 2막에서는 더 멋진 사람이 되고 싶다.<br />
+              그래서 그동안 롤모델로 삼아왔던 멋진 어른을 첫 탐구대상으로
+              정했다. 썼던 책으로는 『풍운아 채현국』, 『별난 사람 별난 인생』,
+              『지역출판으로 먹고살 수 있을까』,<br />
+              『80년대 경남 독재와 맞선 사람들』, 『토호세력의 뿌리』 등이 있다.
+            </span>
+          </div>
+        </div>
+        <div class="detailreview">
+          <h3>도서리뷰(0)</h3>
+          <div class="detailreviewtop">
+            <span
+              >이 책을 읽고 어떤 느낌을 받으셨나요? 리뷰를 남기고 다른 독자들과
+              함께 공유해보세요.</span
+            >
+            <button class="writereview">리뷰 쓰기</button>
+          </div>
+          <div class="detailreviewbottom">
+            <span
+              >등록된 리뷰가 없습니다<br />
+              <span class="green">첫번쨰 리뷰어가 되어주세요</span></span
+            >
+          </div>
+        </div>
+        <div class="detailrecommand">
+          <h3>이 분야에서 요즘 뜨는 책</h3>
+          <div class="detailtrendbook">
+            <div class="prevbutton1">〈</div>
+            <div class="nextbutton1">〉</div>
+            <div class="border">
+              <div class="slider-view">
+                <div class="detailbookwrap">
+                  <!-- 디테일 슬라이더
+                <div class="detailbookbox">
+                  <a href="sub.html">
+                    <img src="img/main/book1.jpg" alt="" />
+                    <h3>첵제목</h3>
+                    <h4>저자명</h4></a
+                  >
+                </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="detailrecommand1">
+          <h3>이 책과 함께본 책</h3>
+          <div class="detailtogetherbook">
+            <div class="prevbutton1">〈</div>
+            <div class="nextbutton1">〉</div>
+            <div class="border">
+              <div class="slider-view">
+                <div class="detailbookwrap">
+                  <!-- 디테일 슬라이더
+                <div class="detailbookbox">
+                  <a href="sub.html">
+                    <img src="img/main/book1.jpg" alt="" />
+                    <h3>첵제목</h3>
+                    <h4>저자명</h4></a
+                  >
+                </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="service">
+          <h3>교환/반품/환불</h3>
+          <table>
+            <tr>
+              <th>반품/교환방법</th>
+              <td>
+                마이페이지 > 주문관리 > 주문/배송조회 > 주문조회 후
+                [1:1상담신청] 또는 고객센터 (1544-9020)<br />
+                ※ 오픈마켓, 해외배송 주문상품 문의 시 [1:1상담신청] 또는
+                고객센터 (1544-9020)
+              </td>
+            </tr>
+            <tr>
+              <th>반품/교환 가능기간</th>
+              <td>
+                변심반품의 경우 수령 후 7일 이내<br />
+                상품의 결함 및 계약내용과 다를 경우 문제점 발견 후 30일 이내
+              </td>
+            </tr>
+            <tr>
+              <th>반품/교환비용</th>
+              <td>
+                단순변심 혹은 구매착오로 인한 반품/교환은 반송료 고객 부담<br />
+                해외직배송 도서 구매 후 단순변심에 의한 취소 및 반품 시
+                도서판매가의 20% 수수료 부과
+              </td>
+            </tr>
+            <tr>
+              <th>반품/교환 불가 사유</th>
+              <td>
+                소비자의 책임 있는 사유로 상품 등이 손실 또는 훼손된 경우<br />
+                소비자의 사용, 포장 개봉에 의해 상품 등의 가치가 현저히 감소한
+                경우 <br />예) 만화, 잡지, 수험서 및 문제집류<br />
+                복제가 가능한 상품 등의 포장을 훼손한 경우<br />
+                예) 음반/DVD/비디오, 소프트웨어, 만화책, 잡지, 영상 화보집<br />
+                소비자의 요청에 따라 개별적으로 주문 제작되는 상품의 경우
+                <br />디지털 컨텐츠인 eBook, 오디오북 등을 1회 이상 다운로드를
+                받았을 경우 <br />시간의 경과에 의해 재판매가 곤란한 정도로
+                가치가 현저히 감소한 경우<br />
+                전자상거래 등에서의 소비자보호에 관한 법률이 정하는 소비자
+                청약철회 제한 내용에 해당되는 경우
+              </td>
+            </tr>
+            <tr>
+              <th>상품 품절</th>
+              <td>
+                공급사(출판사) 재고 사정에 의해 품절/지연될 수 있으며, 품절 시
+                관련 사항에 대해서는 이메일과 문자로 안내드리겠습니다.
+              </td>
+            </tr>
+            <tr>
+              <th>소비자 피해보상 환불지연에 따른 배상</th>
+              <td>
+                상품의 불량에 의한 교환, A/S, 환불, 품질보증 및 피해보상 등에
+                관한 사항은 소비자분쟁 해결 기준 (공정거래위원회 고시)에 준하여
+                처리됨 <br />대금 환불 및 환불지연에 따른 배상금 지급 조건, 절차
+                등은 전자상거래 등에서의 소비자 보호에 관한 법률에 따라 처리함
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="detailpay">
+        <div class="detailpay1">
+          <img src="img/main/book1.jpg" alt="" />
+          <span>줬으면그만이지-아름다운 부자 김장하 취재기</span>
+        </div>
+        <div class="detailpay2">
+          <div class="selceter1">
+            <button>-</button>
+            <input
+              type="text"
+              name="selecternumber"
+              id="selecternumber"
+              value="1"
+            />
+            <button>+</button>
+          </div>
+          <div class="totalcost1">
+            <span class="totalprice"> 18,000<span class="red">원</span> </span>
+          </div>
+        </div>
+        <div class="detailpay3">
+          <div class="pricenotice">
+            <span
+              >실결제 금액은 적립금, 쿠폰 등에 따라 달라질 수 있습니다.</span
+            >
+          </div>
+        </div>
+        <div class="detailpay4">
+          <div class="subbookbutton1">
+            <a href="#"><button class="cart1">장바구니</button></a>
+            <a href="#"><button class="paynow1">바로구매</button></a>
+            <a href="#"><button class="now1">나우드림</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footerall">
+        <div class="footertop">
+          <div class="footertopleft">
+            <span class="servicecenter">고객센터</span>
+            <span class="phonenumber">1544-9020</span>
+            <span class="footerleftdetail"
+              >상담가능시간 &nbsp;&nbsp;평일 09:00 ~ 18:00 / 점심시간 12:15 ~
+              13:15</span
+            >
+            <span class="footerleftdetail"
+              >대표 메일
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;customer@ypbooks.co.kr</span
+            >
+            <span class="footerleftdetail"
+              >대량 주문 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              webmaster@ypbooks.co.kr</span
+            >
+            <div class="footertopleftbutton">
+              <a href="#">FAQ</a>
+              <a href="#">1:1고객상담</a>
+              <a href="#">입점문의</a>
+            </div>
+          </div>
+          <div class="footertopright">
+            <div id="sitemap">
+              <div class="sitemap">
+                <span>영풍문고</span>
+                <ul>
+                  <li><a href="#">회사소개</a></li>
+                  <li><a href="#">전국지점 안내</a></li>
+                  <li><a href="#">나우드림</a></li>
+                </ul>
+              </div>
+              <div class="sitemap">
+                <span>비즈니스</span>
+                <ul>
+                  <li><a href="#">입점문의</a></li>
+                  <li><a href="#">광고안내</a></li>
+                  <li><a href="#">출판사통합관리 SCM</a></li>
+                </ul>
+              </div>
+              <div class="sitemap">
+                <span>쇼핑도우미</span>
+                <ul>
+                  <li><a href="#">도서검색</a></li>
+                  <li><a href="#">회원등급 혜택</a></li>
+                  <li><a href="#">주문/배송</a></li>
+                  <li><a href="#">취소/교환/환불</a></li>
+                  <li><a href="#">적립금 사용</a></li>
+                  <li><a href="#">교환권 사용</a></li>
+                  <li><a href="#">청약철회</a></li>
+                </ul>
+              </div>
+              <div class="sitemap">
+                <span>고객센터</span>
+                <ul>
+                  <li><a href="#">1:1고객상담</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">공지사항 </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footerbottom">
+          <div class="footerlogo">
+            <img src="img/header/yp_logo.png" alt="" />
+          </div>
+          <div class="footerbottomdetail">
+            <div class="footernav">
+              <ul>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">영상정보관리방침</a></li>
+                <li><a href="#">청소년보호정책</a></li>
+                <li><a href="#">이메일 무단 수집거부</a></li>
+              </ul>
+            </div>
+            <div class="footerinfo">
+              <ul>
+                <li><span>(주) 영풍문고 </span></li>
+                <li>
+                  <span
+                    >주소 서울특별시 강남구 강남대로 542(논현동, 영풍빌딩)
+                    (우)06110
+                  </span>
+                </li>
+                <li><span>대표이사 김경환 </span></li>
+                <li>
+                  <span
+                    >사업자 등록번호 773-86-01800
+                    <a href="#">사업자정보확인</a></span
+                  >
+                </li>
+                <li><span>통신판매등록번호 2024-서울강남 06241</span></li>
+                <li><span>개인정보관리 책입자 조순제</span></li>
+              </ul>
+              <span
+                >COPYRIHGHT © YOUNGPOONG BOOKSTORE INC. ALL RIGHTS
+                RESERVED</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

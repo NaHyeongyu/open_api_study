@@ -1,0 +1,427 @@
+/* nomaly books titles */
+#booktitle {
+  font-size: 14.8px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* nomaly books writer */
+#writer {
+  margin-top: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #80888a;
+}
+.cover {
+  border-radius: 8px;
+  border: 0.2px solid #dadada;
+  width: 190px;
+  height: 290px;
+  box-shadow: 8px 4px 4px#d8d8d8;
+  background-color: #fefefe;
+}
+/* nomaly books */
+#books > .cover > a > img {
+  width: 188px;
+  height: 288px;
+  border-radius: 4px;
+}
+.newbook {
+  float: left;
+}
+.lately {
+  float: right;
+}
+#quickMenu {
+  width: 1060px;
+  margin-top: 100px;
+}
+.quickicon > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 28px;
+}
+.quickicon > ul > li {
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+.quickicon > ul > li > span {
+  font-size: 13px;
+  color: #000000;
+  margin-top: 8px;
+}
+
+.iconbox {
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: #f6f6f6;
+}
+
+.iconbox > img {
+  width: 48px;
+  height: 48px;
+  display: block;
+  border-radius: 50px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 600;
+}
+.service {
+  margin-top: 12px;
+}
+#quickMenu > .service > span {
+  font-size: 14px;
+  margin-right: 12px;
+  color: #80888a;
+}
+#quickMenu > .service > .servicechecked {
+  font-size: 14px;
+  font-weight: 700;
+  margin-right: 12px;
+  color: rgb(74, 175, 112);
+}
+#quickMenu > a {
+  color: #80888a;
+  font-size: 14px;
+}
+.setting {
+  float: right;
+}
+.todaysbooks {
+  display: flex;
+  justify-content: space-between;
+}
+.bookbox {
+  margin: 0;
+  margin-top: 24px;
+  margin-bottom: 100px;
+}
+#todays {
+  width: 1060px;
+  margin-top: 100px;
+}
+.introduce {
+  width: 1069px;
+  height: 26px;
+}
+.date {
+  font-size: 12px;
+  color: #80888a;
+  font-weight: 300;
+  margin: 0 0 0 16px;
+}
+.bookinfo {
+  margin-top: 16px;
+  width: 190px;
+}
+#weeks {
+  width: 100%;
+}
+.weektype > ul {
+  width: 1060px;
+  margin: 20px auto 40px auto;
+  gap: 0;
+}
+.weektype > ul > li {
+  display: inline;
+  margin-right: 10px;
+}
+.weektype ul li:nth-child(-n + 5) {
+  display: inline-block; /* 또는 flex 아이템이면 flex로 */
+}
+.weektype > ul > li > button {
+  padding: 10px 12px;
+  border-radius: 16px;
+  background-color: #f6f6f6;
+  color: #80888a;
+  border: none;
+}
+.weektype > ul > li > .weekchecked {
+  padding: 10px 12px;
+  border-radius: 16px;
+  background-color: rgb(74, 175, 112);
+  color: #f6f6f6;
+  border: none;
+}
+
+.hottype > ul {
+  width: 1060px;
+  margin: 20px auto 20px auto;
+  gap: 0;
+}
+.hottype > ul > li {
+  display: inline;
+  margin-right: 10px;
+}
+.hottype ul li:nth-child(-n + 5) {
+  display: inline-block; /* 또는 flex 아이템이면 flex로 */
+}
+.hottype > ul > li > button {
+  padding: 10px 12px;
+  border-radius: 16px;
+  background-color: #f6f6f6;
+  color: #80888a;
+  border: none;
+}
+.hottype > ul > li > .hottypechecked {
+  padding: 10px 12px;
+  border-radius: 16px;
+  background-color: rgb(74, 175, 112);
+  color: #f6f6f6;
+  border: none;
+}
+.bookbox2 {
+  width: 100%;
+  height: 320px;
+  background-color: #fffbf0;
+}
+.book2 {
+  width: 1060px;
+  height: 100%;
+  display: flex;
+}
+.activebook {
+  width: 384px;
+  margin-top: 40px;
+  float: left;
+}
+.activebook > a > img {
+  width: 158px;
+  height: 234px;
+  float: left;
+  margin-right: 18px;
+}
+.activebook > .weekbooktitle {
+  font-size: 20px;
+  font-weight: 400;
+  display: block;
+  margin-top: 20px;
+}
+.activebook > .weekbookwriter {
+  font-size: 14px;
+  color: #80888a;
+  font-weight: 200px;
+  display: block;
+  margin-top: 8px;
+}
+.weekwrap {
+  width: 684px;
+  height: 234px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-top: 80px;
+}
+.weekview {
+  width: 684px;
+  overflow: hidden;
+}
+.weekbox > img {
+  width: 100px;
+  height: 150px;
+}
+.banner2 {
+  background-color: #37448c;
+  width: 100%;
+  height: 120px;
+  margin-top: 100px;
+}
+.banner2img {
+  width: 1060px;
+}
+.banner2 > .banner2img > a > img {
+  height: 120px;
+}
+#hotbook {
+  width: 1060px;
+  margin-top: 100px;
+}
+
+/* --- Hotbook Carousel Styles --- */
+.hotbook-slider {
+  position: relative;
+  width: 1060px;
+  margin: 0 auto;
+}
+.hotbook-viewport {
+  overflow: hidden;
+  width: 1060px;
+  margin: 0 auto;
+}
+.hotbooks {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  will-change: transform;
+}
+.hotbooks .bookbox {
+  width: 210px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  padding: 0 10px;
+  margin: 0;
+}
+.hot-prevbutton,
+.hot-nextbutton {
+  position: absolute;
+  top: 140px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #3a3a3a;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  user-select: none;
+}
+.hot-prevbutton:hover,
+.hot-nextbutton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.hot-prevbutton {
+  left: -60px;
+  top: 130px;
+}
+.hot-nextbutton {
+  right: -60px;
+  top: 130px;
+}
+#popular {
+  width: 1060px;
+  margin-top: 100px;
+}
+.populartype > ul {
+  width: 1060px;
+  margin: 20px auto 20px auto;
+  gap: 0;
+}
+.populartype > ul > li {
+  display: inline;
+  margin-right: 10px;
+}
+.populartype ul li:nth-child(-n + 5) {
+  display: inline-block; /* 또는 flex 아이템이면 flex로 */
+}
+.populartype > ul > li > button {
+  padding: 10px 12px;
+  border-radius: 16px;
+  background-color: #f6f6f6;
+  color: #80888a;
+  border: none;
+}
+.populartype > ul > li > .popularchecked {
+  padding: 10px 12px;
+  border-radius: 16px;
+  background-color: rgb(74, 175, 112);
+  color: #f6f6f6;
+  border: none;
+}
+.popularbooks {
+  width: 1060px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  justify-content: space-between;
+}
+#mdrecommand {
+  width: 1060px;
+  margin-top: 30px;
+}
+.mdbook {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.mdbook .bookbox {
+  width: 210px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.mdbook-viewport {
+  overflow: hidden;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+/* .hottype > ul {
+  width: 1060px;
+  margin: 20px auto 40px auto;
+  gap: 0;
+}
+.hottype > ul > li {
+  display: inline;
+  margin-right: 10px;
+}
+.hottype > ul > li > button {
+  padding: 10px 12px;
+  border-radius: 16px;
+  background-color: #f6f6f6;
+  color: #80888a;
+  border: none;
+}
+.hottype > ul > li > .hottypechecked {
+  padding: 10px 12px;
+  border-radius: 16px;
+  background-color: rgb(74, 175, 112);
+  color: #f6f6f6;
+  border: none;
+} */
+
+.mdbook-slider {
+  position: relative;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.prevbutton,
+.nextbutton {
+  position: absolute;
+  top: 165px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #3a3a3a;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.prevbutton:hover,
+.nextbutton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.prevbutton {
+  left: -60px;
+}
+
+.nextbutton {
+  right: -60px;
+}

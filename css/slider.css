@@ -1,0 +1,163 @@
+.slider-nav-button {
+  position: absolute;
+  top: 55%; /* slightly raised from 60% */
+  transform: translateY(-50%);
+  z-index: 10;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.415);
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  font-size: 20px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+.slider-prev {
+  left: calc(50% - 342px - 70px); /* widen spacing slightly */
+}
+
+.slider-next {
+  right: calc(50% - 342px - 70px);
+}
+.slider-nav-button > img {
+  width: 32px;
+  height: 32px;
+}
+
+#slider {
+  width: 100%;
+  height: 430px; /* match sliderImg height */
+  position: relative;
+  overflow: visible;
+}
+/* Fade transition for background color */
+.sliderback,
+.navAll {
+  transition: background-color 0.7s ease-in-out;
+}
+.sliderback {
+  width: 100%;
+  height: 380px;
+  background-color: rgb(74, 175, 112);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.sliderImg {
+  position: absolute;
+  top: 30px; /* offset downward inside the #slider container */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 750px;
+  height: 430px;
+}
+.sliderImg > ul {
+  display: flex;
+  width: 100%;
+  transition: all 0.5s;
+}
+/* Ensure li elements are properly positioned within .sliderImg */
+.sliderImg > ul > li {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s, left 1s;
+  width: 684px;
+  height: 430px;
+  /* Prevent pointer events on inactive slides */
+  pointer-events: none;
+}
+/* Show only the active, prev, and next slides, and align them properly */
+.sliderImg > ul > li.active,
+.sliderImg > ul > li.prev,
+.sliderImg > ul > li.next,
+.sliderImg > ul > li.prev2,
+.sliderImg > ul > li.next2 {
+  top: 0;
+  opacity: 1;
+  pointer-events: auto;
+  position: absolute;
+}
+.sliderImg > ul > li.active {
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.sliderImg > ul > li.prev {
+  left: calc(50% - 784px);
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.sliderImg > ul > li.next {
+  left: calc(50% + 784px);
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.sliderImg > ul > li.prev2 {
+  left: calc(50% - 784px * 2);
+  transform: translateX(-50%);
+  opacity: 0;
+  z-index: 0;
+}
+.sliderImg > ul > li.next2 {
+  left: calc(50% + 784px * 2);
+  transform: translateX(-50%);
+  opacity: 0;
+  z-index: 0;
+}
+.sliderImg > ul > li > a > img {
+  width: 684px;
+  height: 430px;
+  border-radius: 16px;
+}
+.slider-transition {
+  transition: all 1.4s ease-in-out;
+}
+
+/* ===== MD 추천 도서 슬라이더 ===== */
+.mdbook .bookbox2 {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.mdbook .book2 {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.mdbook .activebook {
+  flex: 0 0 20%; /* 5 items per view */
+  box-sizing: border-box;
+  padding: 0 8px;
+}
+
+/* ===== MD 추천 도서 슬라이더 좌우 버튼 ===== */
+.mdbook-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.carousel-prev.mdbook-btn {
+  left: 0;
+}
+
+.carousel-next.mdbook-btn {
+  right: 0;
+}
