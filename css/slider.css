@@ -161,3 +161,6 @@
 .carousel-next.mdbook-btn {
   right: 0;
 }
+body {
+  overflow-x: hidden;
+}

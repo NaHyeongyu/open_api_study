@@ -54,7 +54,7 @@ $(function () {
         }px)`;
       }
 
-      document.querySelector(".nextbutton").addEventListener("click", () => {
+      document.querySelector(".md-nextbutton").addEventListener("click", () => {
         if (currentIndex >= totalSlides) {
           currentIndex = 0;
           container.style.transition = "none";
@@ -69,13 +69,13 @@ $(function () {
         }
       });
 
-      document.querySelector(".prevbutton").addEventListener("click", () => {
+      document.querySelector(".md-prevbutton").addEventListener("click", () => {
         if (currentIndex <= 0) {
           currentIndex = totalSlides;
           container.style.transition = "none";
           container.style.transform = `translateX(-${
-            currentIndex * (100 / itemsPerSlide)
-          }%)`;
+            currentIndex * bookWidth * itemsPerSlide
+          }px)`;
           setTimeout(() => {
             currentIndex--;
             moveSlider();

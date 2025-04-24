@@ -177,6 +177,7 @@
 }
 .hottype > ul > li > .hottypechecked {
   padding: 10px 12px;
+
   border-radius: 16px;
   background-color: rgb(74, 175, 112);
   color: #f6f6f6;
@@ -192,31 +193,56 @@
 .book2 {
   width: 1060px;
   height: 100%;
+  margin: 0 auto;
   display: flex;
+  position: relative;
 }
 .activebook {
   width: 384px;
+  height: 100px;
   margin-top: 40px;
   float: left;
 }
-.activebook > a > img {
+/* Refactored weekly bestseller active book styles */
+.bookcontent {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.bookcontent a > img {
   width: 158px;
   height: 234px;
-  float: left;
   margin-right: 18px;
+  flex-shrink: 0;
 }
-.activebook > .weekbooktitle {
-  font-size: 20px;
+
+.bookcontent .textinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.textinfo .weekbooktitle {
+  font-size: 18px;
   font-weight: 400;
-  display: block;
-  margin-top: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 16px 0 0 0;
+  text-align: left;
 }
-.activebook > .weekbookwriter {
+
+.textinfo .weekbookwriter {
   font-size: 14px;
   color: #80888a;
-  font-weight: 200px;
-  display: block;
-  margin-top: 8px;
+  font-weight: 200;
+  margin: 10px 0 0 0;
+  text-align: left;
 }
 /* .weekwrap {
   width: 684px;
@@ -227,7 +253,8 @@
   margin-top: 80px;
 } */
 .weekview {
-  width: 684px;
+  /* The width will be dynamically set by JS for 5 slides */
+  /* width: 684px; */
   overflow: hidden;
   position: relative;
 }
@@ -235,6 +262,13 @@
 .weekwrap {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  margin-top: 120px;
+  gap: 12px; /* add spacing between boxes */
+  /* The width will be set via JS to match 5 visible slides */
+}
+.weekbox {
+  margin: 0; /* reset margin to ensure spacing is controlled by gap */
+  flex-shrink: 0; /* prevent shrinking */
 }
 .weekbox > img {
   width: 100px;
@@ -430,11 +464,71 @@
 }
 
 /* Weekly bestseller section: override position for its nav buttons */
-.bookbox2 .prevbutton {
-  left: 130px;
+/* Unified carousel navigation button style for .bookbox2 (weekly bestseller) */
+/* Weekly bestseller carousel navigation buttons for .bookbox2 */
+/* Weekly bestseller carousel navigation buttons for .bookbox2 */
+.week-prevbutton,
+.week-nextbutton {
+  position: absolute;
+  top: 130px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #3a3a3a;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  user-select: none;
 }
-.bookbox2 .nextbutton {
-  right: 130px;
+.week-prevbutton:hover,
+.week-nextbutton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.week-prevbutton {
+  left: calc(50% - 590px); /* 1060px / 2 - 530 to align with .book2 left */
+}
+.week-nextbutton {
+  right: calc(50% - 590px); /* mirror for right */
+}
+
+/* Unified carousel navigation button style for .mdbook (MD 추천 도서) */
+/* MD 추천 도서 carousel navigation buttons */
+.md-prevbutton,
+.md-nextbutton {
+  position: absolute;
+  top: 130px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #3a3a3a;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  user-select: none;
+}
+.md-prevbutton:hover,
+.md-nextbutton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.md-prevbutton {
+  left: -60px;
+}
+.md-nextbutton {
+  right: -60px;
 }
 .banner3 {
   background-color: #f9d341;
@@ -447,4 +541,17 @@
 }
 .banner3 > .banner3img > a > img {
   height: 120px;
+}
+.weekbox {
+  transition: none;
+}
+.weekbox.active {
+  border: 2px solid rgb(0, 116, 44);
+  box-sizing: border-box;
+
+  box-shadow: 0 0 10px rgba(74, 175, 112, 0.4);
+}
+.activebook {
+  position: relative;
+  height: 260px;
 }
